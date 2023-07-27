@@ -6,21 +6,14 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary-text-color: #183b56;
-  --secondary-text-color: #577592;
-  --accent-color: #2294ed;
-  --accent-color-dark: #1d69a3;
-}
-
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--primary-text-color);
+  color: #183b56;
 }
 
 p {
   font-family: "Roboto", sans-serif;
-  color: var(--secondary-text-color);
+  color: #577592;
   line-height: 1.4rem;
 }
 
@@ -63,12 +56,26 @@ nav {
   gap: 30px;
 }
 
+#theme-btn {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #596aff;
+  align-self: center;
+}
+#theme-btn:hover {
+  color: #bb86fc;
+}
+.changeTheme {
+  background: #1d1e22;
+  color: #eee;
+}
+
 .hover-link {
   cursor: pointer;
 }
 
 .hover-link:hover {
-  color: var(--secondary-text-color);
+  color: #577592;
 }
 
 .hover-link:active {
@@ -76,13 +83,14 @@ nav {
 }
 
 .nav-item.active {
-  color: var(--accent-color);
+  color: #2294ed;
 }
 
 .search-bar {
   height: 32px;
-  gap: 8px;
-  margin-right: 50px;
+  gap: 11px;
+  margin-right: 70px;
+  display: flex;
 }
 
 .news-input {
@@ -95,7 +103,7 @@ nav {
 }
 
 .search-button {
-  background-color: var(--accent-color);
+  background-color: #2294ed;
   color: white;
   padding: 8px 24px;
   border: none;
@@ -105,7 +113,7 @@ nav {
 }
 
 .search-button:hover {
-  background-color: var(--accent-color-dark);
+  background-color: #1d69a3;
 }
 
 main {
